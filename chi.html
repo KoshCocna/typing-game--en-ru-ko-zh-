@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/eng.css">
+    <title>打字快手</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.ico">
+</head>
+<body>
+    <!--rotating animation-->
+    <div id="loader">
+        <div class="inner rotate-one"></div>
+        <div class="inner rotate-two"></div>
+        <div class="inner rotate-three"></div>
+    </div>
+
+    <div class="label1">
+        <h1 class="title">打字快手</h1>
+    </div>
+    
+
+    <div class="label1">
+        <p><span class="sec-label" id="seconds">5</span>秒钟内打下面出现的字:</p>
+        <h2 class="target-word" id="current-word">你好</h2>
+
+        <input class="input" type="text" placeholder="请输入。。。" id="word-input" autofocus>
+
+        <h4  id="message"></h4>
+
+        <div class="timer-score">
+            <h3 class="timer">剩下时间:
+                <span id="time">0</span>
+                </h3>
+            
+                <h3 class="score">得分:
+                <span id="score">0</span>
+                </h3>
+        </div>
+    </div>
+
+
+    
+     <!--level select form-->
+     <form>
+        <select id="level" name="level">
+            <option value=6>容易</option>
+            <option value=4>一般</option>
+            <option value=3>非常难</option>
+        </select>
+      </form>
+    <!--start button-->
+    <button onclick="init()">开始</button>
+
+    <!--return to main screen-->
+    <button class="demo" onclick="gotoMain()">&#8920;回去&#8920;</button>
+
+    <div class="label2">
+        <h3>怎么玩</h5>
+        <p>一定时间内打完出现的单词。 可以选者游戏水平难度。为了重新开始，按“开始”。 您得的分数是从零重新开始。 
+        </p>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+    Copyright &copy; 打字快手 2021年12月01日 Kimich.
+    </div>
+    <script src="js/ch.js"></script>
+  </body>
+</html>

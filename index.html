@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.ico">
+    <link rel="stylesheet" href="css/main_screen_style.css">
+</head>
+<body>
+    <!--header label-->
+    <h1>Welcome to our Typing School!</h1>
+    <p>Here you can train your speed-typing skills in English, Russian, Korean and in Chinese.</p>
+    
+    <!--rotating animation-->
+    <div id="loader">
+        <div class="inner rotate-one"></div>
+        <div class="inner rotate-two"></div>
+        <div class="inner rotate-three"></div>
+    </div>
+
+    <!--language select form-->
+    <form>
+        <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+            <option value="ko">Korean</option>
+            <option value="ch">Chinese</option>
+        </select>
+    </form>
+    
+    
+
+    <!--start button-->
+    <button onclick="start()">Let's Go</button>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+    Copyright &copy; Typing School 01.12.2021 by Kimich.
+    </div>
+    <script src="js/gameStarting.js"></script>
+</body>
+</html>
